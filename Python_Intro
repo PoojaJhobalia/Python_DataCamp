@@ -1,0 +1,46 @@
+List : areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+you can also write intro = ["hello"*2] - this will show hello twice.You can use addition as well to join 
+but remember to convert a float/int to a string with str(20.5) to add to a string eg-> "hallway: " + str(20.5)
+
+#modify
+areas[3] = 5 --> this will change the kitchen area from 18 to 5 in the original list
+del(areas[-4:-2]) --> this will delete the 
+
+#sublist
+house = area + ["garage", 20.5, "pool", 45]
+x = areas 
+BUT if u change anything in x, even areas list will change. To avoid that, use: x = list(areas) !
+
+#slicing 
+areas[:6] ~ means show first 6 values values - from 0 to 5(excluding 6) :(first element"hallway" to 6th element 20 )
+
+Fucntions : 
++, -, *, /, ** (exponential power), % (remainder)
+type() ---> float, boolean, int, string
+len() --> length of the variable(how many elements it has)
+int()-->change the var(in the bracket)'s type to integer. Can do for any like str() / float() / bool() 
+print()
+sorted() --> sorted(iterable, /, *, key=None, reverse=False). Return a new list containing all items from the iterable in ascending order.
+          --> sorted(variable, reverse = True) will return after sorting in descending order
+min() / max()
+pow() --> pow(base, exp, mod=None).Equivalent to base**exp with 2 arguments or base**exp % mod with 3 arguments(for int)
+round(var, how many after decimal) for float or round() for int
+del() --> delete
+help()--> what does the function in bracket mean and need as input eg. help(max)
+
+For String : 
+object.capitalize() or upper()
+object.index("z") --> will return the index number on which that letter z is in the string name
+replace()
+For Float :
+bit_length()
+conjugate()
+For List :
+index()
+area.index("hallway") - > will return the position (from 0 to n) where hallway exsits in the list called area
+count()
+
+
+Numpy :
+import numpy as np
+np.mean / np.median / np.std / np.corrcoef
